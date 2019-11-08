@@ -30,6 +30,8 @@
     "ref-struct": "BrainCoTech/ref-struct#node-12"
   },
   "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-rebuild": "git+https://github.com/adis300/electron-rebuild.git",
     "fs-extra": "^7.0.1",
     "mocha": "*",
     "ref-array": "BrainCoTech/ref-array#node-12"
