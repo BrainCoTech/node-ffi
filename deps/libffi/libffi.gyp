@@ -116,11 +116,11 @@
         ],
       },
       'conditions': [
-        ['target_arch=="arm"', {
-          'sources': [ 'src/arm/ffi.c' ],
+        ['target_arch=="arm64"', {
+          'sources': [ 'src/aarch64/ffi.c' ],
           'conditions': [
             ['OS=="linux"', {
-              'sources': [ 'src/arm/sysv.S' ]
+              'sources': [ 'src/aarch64/sysv.S' ]
             }]
           ]
         }, { # ia32 or x64
@@ -131,8 +131,8 @@
           'conditions': [
             ['OS=="mac"', {
               'sources': [
-                'src/x86/darwin.S',
-                'src/x86/darwin64.S'
+                'src/x86/unix64.S',
+                'src/x86/sysv.S'
               ]
             }],
             ['OS=="win"', {
